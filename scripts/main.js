@@ -1,8 +1,8 @@
 import{ listProducts } from"./listProducts.js"
 
 /**
- * Autor: Alejandro González Corroto Fernández
- * GitHub: https://github.com/Rocket201/Gesti-n-Inventario.git
+ * Autor: Laura López Alonso
+ * GitHub: https://github.com/laurity/import-export-JS.git
  */
 
 // Listamos los productos 
