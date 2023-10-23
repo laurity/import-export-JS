@@ -36,4 +36,35 @@ h1{
     color: white;
     padding: 20px;
     border: 1px solid #333;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 1);
+}
+
+/*Estilos para las etiquetas y campos de entrada*/
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input{
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    /*Fondo negro para el input*/
+    outline: none;
+}
+button{
+    margin: 2% 2% 2% 2%;
+    background-color: #3523b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
