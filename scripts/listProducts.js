@@ -2,11 +2,12 @@ import{ inventory }from "./products.js " ;
 
 export const listProducts = ()=>{
 
-    const table = document.getElementById("inventory-table-events")
+    const table = document.getElementById("inventory-table-events");
+    const clearTable = document.getElementById("clear-table");
 
         inventory.forEach(item => {
         
-        const row = table.insertRow();
+        const row = clearTable.insertRow();
 
         const cell1 = row.insertCell(0);
         const cell2 = row.insertCell(1);
