@@ -33,7 +33,23 @@ export const listProducts = ()=>{
        deleteButton.addEventListener("click", ()=>{
         //logica para borrar el producto (puedes mostrar un mensaje de confirmacion antes)
         //puedes acceder a los datos del productoutilizando item.nombre, item.cantidad
-       });
+
+        if(confirm(`¿Estás seguro que desea borrar el producto ${item.nombre}?`)){
+            //Recibe el producto a borrar
+            //Encuentra el índice del producto a eliminar: deltro del forEach, comparamos el product con el item correspondiente de inventory
+            const index = inventory.findIndex( product => product.id === item.id )
+            
+            //Si el índice resultante no es -1, tenemos coincidencia
+            if (index !== -1){
+                //Borramos el producto del array, le indicamos el objeto y cuantos queremos borrar
+                inventory.splice(index,1);
+            }
+        }
+
+        clearTable.innerHTML= "";
+        listProducts();
+        });
+
        cell4.appendChild(deleteButton);
 
     });
